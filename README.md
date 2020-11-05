@@ -1,5 +1,5 @@
-# electra
-Electra is a little Go project made for learning purposes
+# Savage
+Savage is a little Go project made for learning purposes
 
 ## Contributing
 Is that simple: fork the repo; make changes; pull request them to `main`.
