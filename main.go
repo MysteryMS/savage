@@ -1,12 +1,10 @@
 package main
 
 import (
-	"errors"
 	"fmt"
 	"github.com/fatih/color"
 	"github.com/joho/godotenv"
 	"log"
-	"os"
 )
 
 func init() {
@@ -35,14 +33,14 @@ func main() {
 			color.MagentaString(firstTrack.Artist.Name),
 			color.MagentaString(firstTrack.Album.Name),
 		)
-		return
+	} else {
+		fmt.Printf("%v 🡒 %v by %v on %v\n",
+			color.GreenString(":: Now Playing"),
+			color.YellowString(firstTrack.Name),
+			color.MagentaString(firstTrack.Artist.Name),
+			color.MagentaString(firstTrack.Album.Name),
+		)
 	}
-	fmt.Printf("%v 🡒 %v by %v on %v\n",
-		color.GreenString(":: Now Playing"),
-		color.YellowString(firstTrack.Name),
-		color.MagentaString(firstTrack.Artist.Name),
-		color.MagentaString(firstTrack.Album.Name),
-	)
 
 	color.Blue(":: Top 5 tracks ::")
 	topTrackData := getTop(user)
