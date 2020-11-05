@@ -1,10 +1,12 @@
 package main
 
 import (
+	"errors"
 	"fmt"
 	"github.com/fatih/color"
 	"github.com/joho/godotenv"
 	"log"
+	"os"
 )
 
 func init() {
