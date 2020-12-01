@@ -17,4 +17,3 @@ Is that simple: fork the repo; make changes; pull request them to `main`.
 `$ go build`
 
 `$ ./lastfm-grabber MysteryMS`
-# savage
